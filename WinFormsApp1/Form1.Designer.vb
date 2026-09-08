@@ -22,42 +22,30 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Button1 = New Button()
-        Label1 = New Label()
+        judulCOK = New Label()
         SuspendLayout()
         ' 
-        ' Button1
+        ' judulCOK
         ' 
-        Button1.Location = New Point(12, 12)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(299, 80)
-        Button1.TabIndex = 0
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(270, 211)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(41, 15)
-        Label1.TabIndex = 1
-        Label1.Text = "Label1"
+        judulCOK.AutoSize = True
+        judulCOK.Location = New Point(232, 37)
+        judulCOK.Name = "judulCOK"
+        judulCOK.Size = New Size(188, 15)
+        judulCOK.TabIndex = 1
+        judulCOK.Text = "Pemerograman Berorientasi Objek"
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
-        Controls.Add(Label1)
-        Controls.Add(Button1)
+        ClientSize = New Size(670, 450)
+        Controls.Add(judulCOK)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents judulCOK As Label
 
 End Class
