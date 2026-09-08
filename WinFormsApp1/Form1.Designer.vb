@@ -23,6 +23,10 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         judulCOK = New Label()
+        BtnClick = New Button()
+        getRes = New Label()
+        tb1 = New TextBox()
+        tb2 = New TextBox()
         SuspendLayout()
         ' 
         ' judulCOK
@@ -34,11 +38,47 @@ Partial Class Form1
         judulCOK.TabIndex = 1
         judulCOK.Text = "Pemerograman Berorientasi Objek"
         ' 
+        ' BtnClick
+        ' 
+        BtnClick.Location = New Point(121, 220)
+        BtnClick.Name = "BtnClick"
+        BtnClick.Size = New Size(75, 23)
+        BtnClick.TabIndex = 4
+        BtnClick.Text = "Button1"
+        BtnClick.UseVisualStyleBackColor = True
+        ' 
+        ' getRes
+        ' 
+        getRes.AutoSize = True
+        getRes.Location = New Point(137, 256)
+        getRes.Name = "getRes"
+        getRes.Size = New Size(41, 15)
+        getRes.TabIndex = 5
+        getRes.Text = "Label1"
+        ' 
+        ' tb1
+        ' 
+        tb1.Location = New Point(121, 123)
+        tb1.Name = "tb1"
+        tb1.Size = New Size(100, 23)
+        tb1.TabIndex = 6
+        ' 
+        ' tb2
+        ' 
+        tb2.Location = New Point(121, 172)
+        tb2.Name = "tb2"
+        tb2.Size = New Size(100, 23)
+        tb2.TabIndex = 7
+        ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(670, 450)
+        Controls.Add(tb2)
+        Controls.Add(tb1)
+        Controls.Add(getRes)
+        Controls.Add(BtnClick)
         Controls.Add(judulCOK)
         Name = "Form1"
         Text = "Form1"
@@ -47,5 +87,11 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents judulCOK As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents b2 As TextBox
+    Friend WithEvents BtnClick As Button
+    Friend WithEvents getRes As Label
+    Friend WithEvents tb1 As TextBox
+    Friend WithEvents tb2 As TextBox
 
 End Class
