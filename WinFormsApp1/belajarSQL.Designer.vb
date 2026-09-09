@@ -30,6 +30,14 @@ Partial Class belajarSQL
         Label2 = New Label()
         Label3 = New Label()
         Click = New Button()
+        Label4 = New Label()
+        listbar = New DataGridView()
+        id = New DataGridViewTextBoxColumn()
+        nama_slug_barang = New DataGridViewTextBoxColumn()
+        label_barang = New DataGridViewTextBoxColumn()
+        harga_satuan = New DataGridViewTextBoxColumn()
+        loadClick = New Button()
+        CType(listbar, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' text
@@ -43,21 +51,21 @@ Partial Class belajarSQL
         ' 
         ' isSlug
         ' 
-        isSlug.Location = New Point(86, 90)
+        isSlug.Location = New Point(86, 74)
         isSlug.Name = "isSlug"
         isSlug.Size = New Size(151, 23)
         isSlug.TabIndex = 2
         ' 
         ' isLabel
         ' 
-        isLabel.Location = New Point(86, 119)
+        isLabel.Location = New Point(86, 103)
         isLabel.Name = "isLabel"
         isLabel.Size = New Size(151, 23)
         isLabel.TabIndex = 3
         ' 
         ' isPrice
         ' 
-        isPrice.Location = New Point(86, 148)
+        isPrice.Location = New Point(86, 132)
         isPrice.Name = "isPrice"
         isPrice.Size = New Size(151, 23)
         isPrice.TabIndex = 4
@@ -65,7 +73,7 @@ Partial Class belajarSQL
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(243, 93)
+        Label1.Location = New Point(243, 77)
         Label1.Name = "Label1"
         Label1.Size = New Size(200, 15)
         Label1.TabIndex = 5
@@ -74,7 +82,7 @@ Partial Class belajarSQL
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(243, 122)
+        Label2.Location = New Point(243, 106)
         Label2.Name = "Label2"
         Label2.Size = New Size(205, 15)
         Label2.TabIndex = 6
@@ -83,7 +91,7 @@ Partial Class belajarSQL
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(243, 151)
+        Label3.Location = New Point(243, 135)
         Label3.Name = "Label3"
         Label3.Size = New Size(170, 15)
         Label3.TabIndex = 7
@@ -91,18 +99,68 @@ Partial Class belajarSQL
         ' 
         ' Click
         ' 
-        Click.Location = New Point(86, 177)
+        Click.Location = New Point(86, 161)
         Click.Name = "Click"
         Click.Size = New Size(151, 23)
         Click.TabIndex = 8
         Click.Text = "Klik untuk nambah"
         Click.UseVisualStyleBackColor = True
         ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(243, 247)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(65, 15)
+        Label4.TabIndex = 9
+        Label4.Text = "List Barang"
+        ' 
+        ' listbar
+        ' 
+        listbar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        listbar.Columns.AddRange(New DataGridViewColumn() {id, nama_slug_barang, label_barang, harga_satuan})
+        listbar.Location = New Point(33, 276)
+        listbar.Name = "listbar"
+        listbar.Size = New Size(443, 150)
+        listbar.TabIndex = 10
+        ' 
+        ' id
+        ' 
+        id.HeaderText = "id"
+        id.Name = "id"
+        ' 
+        ' nama_slug_barang
+        ' 
+        nama_slug_barang.HeaderText = "slug barang"
+        nama_slug_barang.Name = "nama_slug_barang"
+        ' 
+        ' label_barang
+        ' 
+        label_barang.HeaderText = "label barang"
+        label_barang.Name = "label_barang"
+        ' 
+        ' harga_satuan
+        ' 
+        harga_satuan.HeaderText = "harga"
+        harga_satuan.Name = "harga_satuan"
+        ' 
+        ' loadClick
+        ' 
+        loadClick.Location = New Point(393, 247)
+        loadClick.Name = "loadClick"
+        loadClick.Size = New Size(83, 23)
+        loadClick.TabIndex = 11
+        loadClick.Text = "Klik untuk load"
+        loadClick.UseVisualStyleBackColor = True
+        ' 
         ' belajarSQL
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(loadClick)
+        Controls.Add(listbar)
+        Controls.Add(Label4)
         Controls.Add(Click)
         Controls.Add(Label3)
         Controls.Add(Label2)
@@ -112,6 +170,7 @@ Partial Class belajarSQL
         Controls.Add(isSlug)
         Controls.Add(text)
         Name = "belajarSQL"
+        CType(listbar, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -125,4 +184,11 @@ Partial Class belajarSQL
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Click As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents listbar As DataGridView
+    Friend WithEvents loadClick As Button
+    Friend WithEvents id As DataGridViewTextBoxColumn
+    Friend WithEvents nama_slug_barang As DataGridViewTextBoxColumn
+    Friend WithEvents label_barang As DataGridViewTextBoxColumn
+    Friend WithEvents harga_satuan As DataGridViewTextBoxColumn
 End Class
