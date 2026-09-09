@@ -2,12 +2,12 @@
 Imports MySqlConnector
 Public Class belajarSQL
 
-    Sub sqlLoad()
 
-        Dim conn As New MySqlConnection(
+
+    Private conn As New MySqlConnection( 'inisiasi koneksi database
             "Server=localhost;Database=belajarvb;User ID=root;Password=;"
         )
-
+    Sub sqlLoad()
         conn.Open()
 
         MessageBox.Show("Connected!")
