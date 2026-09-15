@@ -33,7 +33,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.WinFormsApp1.belajarSQL
+            Me.MainForm = Global.WinFormsApp1.Project2
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _

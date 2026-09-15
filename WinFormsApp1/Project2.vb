@@ -22,6 +22,8 @@
             Return
         End If
         TextBox1.Text = "Object Oriented Programming"
+        TextBox1.ForeColor = Color.Blue
+
     End Sub
 
     Private Sub vb_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
@@ -31,10 +33,13 @@
             Return
         End If
         TextBox2.Text = "Visual Basic"
+        TextBox2.BackColor = Color.Yellow
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        ClearAll()
+        TextBox1.ForeColor = Color.Black
+        TextBox2.BackColor = Color.White
+        'ClearAll()
 
     End Sub
 
