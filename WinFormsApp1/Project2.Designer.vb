@@ -40,9 +40,9 @@ Partial Class Project2
         Label1.ForeColor = Color.Coral
         Label1.Location = New Point(156, 57)
         Label1.Name = "Label1"
-        Label1.Size = New Size(85, 15)
+        Label1.Size = New Size(168, 15)
         Label1.TabIndex = 0
-        Label1.Text = "Mamat koding"
+        Label1.Text = "Object Oriented Programming"
         ' 
         ' CheckBox1
         ' 
@@ -102,7 +102,7 @@ Partial Class Project2
         Button1.Name = "Button1"
         Button1.Size = New Size(75, 23)
         Button1.TabIndex = 8
-        Button1.Text = "Button1"
+        Button1.Text = "Bersih"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' bButton
@@ -122,7 +122,7 @@ Partial Class Project2
         Button2.Name = "Button2"
         Button2.Size = New Size(75, 23)
         Button2.TabIndex = 10
-        Button2.Text = "Button2"
+        Button2.Text = "Tutup"
         Button2.UseVisualStyleBackColor = True
         ' 
         ' Project2
@@ -141,6 +141,7 @@ Partial Class Project2
         Controls.Add(CheckBox1)
         Controls.Add(Label1)
         Name = "Project2"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Project2"
         ResumeLayout(False)
         PerformLayout()
