@@ -122,4 +122,6 @@
         calcResult(False, True, operatorAktif)
         calcResult(True, False, "")
     End Sub
+
+
 End Class

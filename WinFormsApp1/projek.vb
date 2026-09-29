@@ -19,4 +19,12 @@
     Private Sub Latihan3ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Latihan3ToolStripMenuItem.Click
         quiz_3_option.Show()
     End Sub
+
+    Private Sub Latihan1ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles Latihan1ToolStripMenuItem1.Click
+        keputusan_1.Show()
+    End Sub
+
+    Private Sub Latihan1ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Latihan1ToolStripMenuItem.Click
+        Form3.Show()
+    End Sub
 End Class
